@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """滑块验证码 ``verifyParam`` 的纯 Python 实现（对应 encrypt.js 里的 ``$encrypt``）。
 
-来源：``reverse/vm/captcha_encrypt.decompiled.js``，由第四套 vm.js 引擎的 AST
-反编译而来。整体是「32 字节定长头 + 流密码密文」：
+来源是第四套 vm.js 引擎的 AST 反编译（``reverse/vm/`` 默认不入库）。
+整体是「32 字节定长头 + 流密码密文」：
 
 ===========  ====  ====================================================
 偏移          长度  内容
