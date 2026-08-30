@@ -14,7 +14,7 @@
     }
     // signResult = engine.call("$encode", [o, {suc, err}])
 
-引擎（app bundle 里的 `Jose`）已完整反编译，见 ``reverse/vm/engine_jose.decompiled.js``。
+引擎（app bundle 里的 `Jose`）已完整反编译。``reverse/vm/`` 默认不入库，本地需要的话自己从 bundle 解。
 它是 vm.js 解释器 + 压缩 AST，配一批挂在 ``Object`` 上的明文原生函数（``jmpOnw_*``）。
 
 产物形如 ``HUDR_<设备信息 blob>$HE_<45 字节容器>``：

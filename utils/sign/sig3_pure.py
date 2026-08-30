@@ -30,7 +30,7 @@
 相同 body（都只有 api_ph）的请求，摘要字节完全一致。
 
 ``en`` 引擎（app bundle 内联的 vm.js 解释器 + LZW 压缩的序列化 AST，非 VMP 字节码）已完整
-反编译，见 ``reverse/vm/engine_en.decompiled.js``。``$encode`` 原样如下：
+反编译。``reverse/vm/`` 默认不入库，本地需要的话自己从 bundle 解。``$encode`` 原样如下：
 
     function $encode(input, cb) {
         var o = j(p(d(D(p(d($(input)), l[0].slice()))), l[1].slice())[0], true);
